@@ -1,0 +1,80 @@
+<section id="leadership">
+    <div class="container">
+        <div class="row">
+            <div style="text-align: left; margin-top:10px" class="col-md-12">
+                <b class="noshow" style="display:none;">
+                    <button class="btn btn-default btn-lg btn-block"  style="display: block; width: 100%;" onclick="$('#tab-leadership-content').toggle();">Leadership Activities</button>
+                </b>
+                <div class="allshow" style="display:none;" id="tab-leadership-content">
+
+                    <hr>
+                    <h2>Leadership Activities</h2>
+                    <ul>
+                        {% if relatedto == 'rahat' %}
+                            <li>
+                                <span class="badge badge-success">President</span> Bit2Byte club, KUET
+                                <ul class="list-right"><li>
+                                    2018-2020
+                                </li></ul>
+                                <ul><li>
+                                    A highly active university club primarily focused on Software Development such as Android Development, Machine Learning, Web Development etc.
+                                </li></ul>
+                            </li>
+                        {% endif %}
+                        <li>
+                            <span class="badge badge-secondary">Mentored</span> 5 Workshops on Basic Electronic Building Blocks, American Corner, Northern University, Khulna
+                            <ul class="list-right"><li>
+                                2018
+                            </li></ul>
+                            <ul><li>
+                                Managed 5 workshops for students of several schools and colleges to attract them towards electronics and computer science. Organized by American Corner, Khulna with assistance of American Embassy
+                            </li></ul>
+                        </li>
+                        {% if relatedto == 'rahat' %}
+                            <li>
+                                <span class="badge badge-secondary">Mentored</span> Several Workshops, Bit2Byte club, KUET
+                                <ul class="list-right"><li>
+                                    2018-2019
+                                </li></ul>
+                                <ul><li>
+                                    Gave lectures in several workshops on various topics such as Intermediate Android Development, Machine Learning, IoT, Web Development arranged by Bit2Byte.
+                                </li></ul>
+                            </li>
+                        {% endif %}
+                        {% if relatedto == 'rahat' %}
+                            <li>
+                                <span class="badge badge-secondary">Mentored</span> Several Workshops, HACK club, KUET
+                                <ul class="list-right"><li>
+                                    2018
+                                </li></ul>
+                                <ul><li>
+                                    Gave training on hands-on Raspberry Pi and Linux based OS on workshops arranged by HACK, Hardware Acceleration Club of KUET.
+                                </li></ul>
+                            </li>
+                        {% endif %}
+                        {% if relatedto == 'rahat' %}
+                            <li>
+                                <span class="badge badge-secondary">Mentored</span> Workshop, SGIPC club, KUET
+                                <ul class="list-right"><li>
+                                    2017
+                                </li></ul>
+                                <ul><li>
+                                    Helped freshers to get started in competitive programming in different online platforms on workshops arranged by SGIPC, Small Group of People Interested in Programming Contest.
+                                </li></ul>
+                            </li>
+                        {% endif %}
+                        <li>
+                            <span class="badge badge-warning">Volunteered</span> NHSPC
+                            <ul class="list-right"><li>
+                                2017
+                            </li></ul>
+                            <ul><li>
+                                Helped organizing National High School Programming Contest, 2017.
+                            </li></ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

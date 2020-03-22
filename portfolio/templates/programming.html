@@ -1,0 +1,19 @@
+<section id="programming">
+    <div class="container">
+        <div class="row">
+            <div style="text-align: left; margin-top:10px" class="col-md-12">
+                <b class="noshow" style="display:none;">
+                    <button class="btn btn-default btn-lg btn-block"  style="display: block; width: 100%;" onclick="$('#tab-programming-content').toggle();">Programming Contests</button>
+                </b>
+                <div class="allshow" style="display:none;" id="tab-programming-content">
+
+                    <hr>
+                    <h2>Programming Contests</h2>
+                    {% with relatedto|add:"/programming-list.html" as programming_list %}
+                        {% include programming_list %}
+                    {% endwith %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

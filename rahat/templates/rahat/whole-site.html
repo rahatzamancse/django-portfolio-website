@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Rahat Zaman{% endblock title %}
+
+{% block content %}
+    {% with relatedto='rahat' name='Md. Rahat-uz-Zaman' expertise='Machine Learning, Artificial Intelligence, Deep Learning, Django, PyQt' bio='Inquisitive, ambitious Deep Learning and Computer Vision enthusiast, proficient in Machine Learning, Artificial Intelligence and Image Processing with a strong foundation in mathematics, propositional logic and programming. Seeking to leverage solid expertise in collaboration, communication and development as a programmer. Open to higher studies and research opportunities.' github='rahatzamancse' linkedin='rahatzamancse' stackoverflow='rahatzamancse' medium='@rahatzamancse' %}
+
+        <!-- Home Section -->
+        {% include 'home.html' %}
+
+        <!-- Biography Section -->
+        {% include 'bio.html' %}
+
+        <!-- Publications Section -->
+        {% include 'publications.html' with orcid='orcid' scholar='scholar' scopus='scopus' researchgate='researchgate' %}
+
+        <!-- Academic Awards Section -->
+        {% include 'academic-award.html' %}
+
+        <!-- Achievements Section -->
+        {% include 'achievements.html' %}
+
+        <!-- Programming Contest Section -->
+        {% include 'programming.html' %}
+
+        <!-- Leaderships Section -->
+        {% include 'leadership.html' %}
+
+        <!-- Special Participations Section -->
+        {% include 'participations.html' %}
+
+        <!-- Courses Section -->
+        {% include 'courses.html' %}
+
+        <!-- Language Section -->
+        {% include 'language.html' %}
+
+        <!-- Random Links Section -->
+        {% with relatedto|add:"/links.html" as links %}
+            {% include links %}
+        {% endwith %}
+
+        <!-- Medium Posts Section -->
+        {% include 'medium.html' %}
+
+        <!-- Contact Section -->
+        {% with relatedto|add:"/contact.html" as contact %}
+            {% include contact %}
+        {% endwith %}
+
+    {% endwith %}
+{% endblock content %}

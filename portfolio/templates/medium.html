@@ -1,0 +1,24 @@
+<section id="medium">
+    <div class="container">
+        <div class="row">
+            <div style="text-align: left; margin-top:10px" class="col-md-12">
+                <b class="noshow" style="display:none;">
+                    <button class="btn btn-default btn-lg btn-block"  style="display: block; width: 100%;" onclick="$('#tab-links-content').toggle();">Medium Feed</button>
+                </b>
+                <div class="allshow" style="display:none;" id="tab-medium-content">
+                    <hr>
+                    <h2>Medium News Feed</h2>
+                    <div id="retainable-rss-embed"
+                         data-rss="https://medium.com/feed/{{ medium }}"
+                         data-maxcols="2"
+                         data-layout="slider"
+                         data-poststyle="inline"
+                         data-readmore="Read the rest"
+                         data-buttonclass="btn btn-primary"
+                         data-offset="-100">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

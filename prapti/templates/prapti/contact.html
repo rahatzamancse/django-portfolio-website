@@ -1,0 +1,29 @@
+{% load static %}
+<section id="contact">
+    <div class="container">
+        <div class="row">
+            <div style="text-align: left; margin-top:10px" class="col-md-12">
+                <b class="noshow" style="display:none;">
+                    <button class="btn btn-default btn-lg btn-block"  style="display: block; width: 100%;" onclick="$('#tab-contact-content').toggle();">Contact</button>
+                </b>
+                <div class="allshow" style="display:none;" id="tab-contact-content">
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h2>Contact</h2>
+                            Email: <a href="mailto:praptishadmaan@gmail.com" target="_blank">praptishadmaan@gmail.com</a>
+                        </div>
+
+                        <div class="col-md-6">
+                            <h4>CONTACT VCARD</h4>
+                            <p>
+                                <a href="{% static 'prapti/vcard.vcf' %}"><img src="{% static 'prapti/images/vcard.png' %}" width="150"></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </div>
+    </div>
+</section>

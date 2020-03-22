@@ -1,0 +1,66 @@
+{% load static %}
+<section id="publications">
+    <div class="container">
+        <div class="row">
+            <div style="text-align: left; margin-top:10px" class="col-md-12">
+                <b class="noshow" style="display:none;">
+                    <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="$('#tab-publications-content').toggle();">Publications</button>
+                </b>
+                <div class="allshow" style="display:none;" id="tab-publications-content">
+                    <hr>
+                    <h2>Publications</h2>
+                    <h4>
+                        <a target="_blank" class="btn btn-dark btn-sm" href="{{ orcid }}">ORCID</a>&nbsp;
+                        <a target="_blank" class="btn btn-dark btn-sm" href="{{ scholar }}">Google Scholar</a>
+                        <a target="_blank" class="btn btn-dark btn-sm" href="{{ scopus }}">Scopus</a>
+                        <a target="_blank" class="btn btn-dark btn-sm" href="{{ researchgate }}">Researchgate</a>
+                        <!-- H-index and Citations to be added in future -->
+                    </h4>
+                    <ul style="text-align: justify">
+                        {% if relatedto == 'rahat' %}
+                            <li>
+                                <span class="badge badge-primary">Thesis work</span>
+                                <a target="_blank" href="#">"Handwritten Numeral Recognition Integrating Start-End Writing Measure with Convolution Neural Network"</a>,
+                                M. A. H. Akhand, Md. Rahat-Uz-Zaman, Shadmaan Hye, N. Siddique, March 2019.
+                            </li>
+                        {% endif %}
+
+                        {% if relatedto == 'prapti' %}
+                            <li>
+                                <span class="badge badge-primary">Thesis work</span>
+                                <a target="_blank" href="#">"LSTM paper ta hobe ekhane arki"</a>,
+                                Shadmaan Hye, Md. Rahat-Uz-Zaman, M. A. H. Akhand, March 2020.
+                            </li>
+                        {% endif %}
+
+                        <li>
+                            <span class="badge badge-success">IEEE ICCIT'19</span>
+                            <a target="_blank" href="https://ieeexplore.ieee.org/document/9038550/">"Agglomerative Clustering of Handwritten Numerals to Determine Similarity of Different Languages"</a>,
+                            M. Rahat-uz-Zaman, S. Hye, <b>22nd International Conference on Computer and Information Technology (ICCIT)</b>, Dhaka, Bangladesh, 2019, pp. 1-6.
+                            <span style="color: red; ">(published!)</span>
+                        </li>
+
+                        <li>
+                            <span class="badge badge-success">IEEE ICECTE'19</span>
+                            <a target="_blank" href="{% static 'agglomerative.pdf' %}">"Audio Future Block Prediction with Conditional Generative Adversarial Network"</a>,
+                            M. Rahat-uz-Zaman, S. Hye, <b>3rd International Conference on Electrical, Computer & Telecommunication Engineering (ICECTE)</b>, Rajshahi, Bangladesh, 2019, pp. 1-4.
+                            <span style="color: red; ">(accepted!)</span>
+                        </li>
+
+                        <li>
+                            <span class="badge badge-danger">Journal - Computers &AMP; Geosciences</span>
+                            <a target="_blank" href="{% static 'road.pdf' %}">"Road Network Shortest Path Analysis of Dhaka Using Different GIS Techniques"</a>,
+                            M. Rahat-uz-Zaman, S. Hye, <b>Computers &AMP; Geosciences</b>, Elsevier, 2020.
+                        </li>
+
+                        <li>
+                            <span class="badge badge-secondary">Journal - not yet submitted!</span>
+                            <a target="_blank" href="{% static 'road.pdf' %}">"VISION-IT: A Novel Approach for Blind to Help hear what is in Front."</a>,
+                            S. Hye, M. Rahat-uz-Zaman, <b>Article not yet submitted</b>, Elsevier, 2020.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

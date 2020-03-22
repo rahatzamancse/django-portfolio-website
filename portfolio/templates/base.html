@@ -1,0 +1,115 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>{% block title %}{% endblock title %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"/>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="{% static 'custom.css' %}">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="index">
+<button onclick="topFunction()" id="btnToTop" title="Go to top">Top</button>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #e3f2fd;">
+    <a class="navbar-brand" href="http://www.kuet.ac.bd" target="_blank">
+        <img src="http://www.kuet.ac.bd/libs/img/logo.png" height="20px" class="mr-1" alt="KUET logo"> KUET
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active" href="#" id="home-dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Home <span class="sr-only">(current)</span>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="home-dropdown">
+                    <a class="dropdown-item" href="#">Introduction</a>
+                    <a class="dropdown-item" href="#">CV (PDF)</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#education">Education</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#publications">Publications</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="activities-dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Activities
+                </a>
+                <div class="dropdown-menu" aria-labelledby="activities-dropdown">
+                    <a class="dropdown-item" href="#academic-awards">Academic Awards</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#achievements">Achivements</a>
+                    <a class="dropdown-item" href="#programming">Programming Contests</a>
+                    <a class="dropdown-item" href="#leadership">Leadership</a>
+                    <a class="dropdown-item" href="#participations">Special Participations</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="courses-dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Courses
+                </a>
+                <div class="dropdown-menu" aria-labelledby="courses-dropdown">
+                    <a class="dropdown-item" href="#academic-courses">Academic</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#coursera-courses">Coursera</a>
+                    <a class="dropdown-item" href="#udemy-courses">Udemy</a>
+                    <a class="dropdown-item" href="#other-courses">Other</a>
+                </div>
+            </li>
+        </ul>
+        <!-- Place this tag where you want the search results to render -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#links">Links</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="ml-2">
+                <script async src="https://cse.google.com/cse.js?cx=006947785037562587561:tpzj7poxd0k"></script>
+                <div class="gcse-search"></div>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+{% block content %}
+{% endblock content %}
+
+<hr>
+<footer>
+    <div style="text-align: center;">
+        © 2020 | Md. Rahat-uz-Zaman and Shadmaan Hye. | Credits. D. Zeinalipour.
+    </div>
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://www.retainable.io/assets/retainable/rss-embed/retainable-rss-embed.js"></script>
+<script type="text/javascript" src="{% static 'custom.js' %}"></script>
+</body>
+</html>

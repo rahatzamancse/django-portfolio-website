@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Shadmaan Hye{% endblock title %}
+
+{% block content %}
+{% with 'prapti' as relatedto %}
+
+    <!-- Home Section -->
+    {% include 'home.html' with name='Shadmaan Hye' expertise='Web Development, Image Processing, bla bla' profile_pic='prapti/profile.png' cvlink="prapti/cv.pdf" github='prapti-044' linkedin='prapti' stackoverflow='prapti' medium='prapti' %}
+
+    <!-- Biography Section -->
+    {% include 'bio.html' with cvlink='prapti/cv.pdf' text='bla bla' %}
+
+    <!-- Publications Section -->
+    {% include 'publications.html' with orcid='orcid' scholar='scholar' scopus='scopus' researchgate='researchgate' %}
+
+    <!-- Academic Awards Section -->
+    {% include 'academic-award.html' %}
+
+    <!-- Achievements Section -->
+    {% include 'achievements.html' %}
+
+    <!-- Programming Contest Section -->
+    {% include 'programming.html' %}
+
+    <!-- Leaderships Section -->
+    {% include 'leadership.html' %}
+
+    <!-- Special Participations Section -->
+    {% include 'participations.html' %}
+
+    <!-- Courses Section -->
+    {% include 'courses.html' %}
+
+    <!-- Language Section -->
+    {% include 'language.html' %}
+
+    <!-- Random Links Section -->
+    {% include 'prapti/links.html' %}
+
+    <!-- Medium Posts Section -->
+    {% include 'medium.html' %}
+
+    <!-- Contact Section -->
+    {% include 'prapti/contact.html' %}
+
+{% endwith %}
+{% endblock content %}

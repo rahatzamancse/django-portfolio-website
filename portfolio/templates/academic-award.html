@@ -1,0 +1,21 @@
+<section id="academic-awards">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <b class="noshow" style="display:none;">
+                    <button class="btn btn-default btn-lg btn-block"  style="display: block; width: 100%;" onclick="$('#tab-academic-awards-content').toggle();">Academic Awards</button>
+                </b>
+                <div class="allshow" style="display:none;" id="tab-academic-awards-content">
+
+                    <hr>
+                    <h2>Academic Awards</h2>
+                    <ul>
+                        {% with relatedto|add:"/academic-award-list.html" as award_list %}
+                            {% include award_list %}
+                        {% endwith %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

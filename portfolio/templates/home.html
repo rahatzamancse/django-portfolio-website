@@ -1,0 +1,46 @@
+{% load static %}
+<section id="home" style="margin-top:80px">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 text-md-right text-left">
+                <a target="_blank" href="{% static '' %}{{ relatedto }}/profile.jpg">
+                    <img src="{% static '' %}{{ relatedto }}/profile.jpg" class="profile-photo" alt="Profile Image">
+                </a>
+            </div>
+            <div class="col-md-9 mt-3 mt-md-0">
+                <h2>{{ name }}</h2>
+                <h4>Student</h4>
+                <p>
+                    <i>Department of Computer Science and Engineering,<br> Khulna University of Engineering & Technology,<br>Khulna, 2019</i><br>
+                    <b>Expertise</b>: {{ expertise }}
+                </p>
+
+                <a href="{% static '' %}{{ relatedto }}/cv.pdf" class="btn btn-primary" target="_blank">CV (PDF)&raquo;</a>
+            </div>
+        </div>
+        <div class="row mb-4 mb-md-0 mt-3">
+            <div class="col">
+                <a class="btn btn-light" target="_blank" href="https://github.com/{{ github }}">
+                    <img src="{% static 'images/github_logo.png' %}" height="30px" alt="Github Link">
+                </a>
+                <a class="btn btn-light" target="_blank" href="https://www.linkedin.com/in/{{ linkedin }}">
+                    <img src="{% static 'images/linkedin_logo.png' %}" height="30px" alt="LinkedIn Link">
+                </a>
+                <a class="btn btn-light" target="_blank" href="https://stackoverflow.com/users/{{ stackoverflow }}">
+                    <img src="{% static 'images/so_logo.png' %}" height="30px" alt="stackoverflow Link">
+                </a>
+                <a class="btn btn-light" target="_blank" href="https://medium.com/{{ medium }}">
+                    <img src="{% static 'images/medium_logo.png' %}" height="30px" alt="Medium Link">
+                </a>
+            </div>
+        </div>
+
+        <!-- Expand and collapse button in small mobile view -->
+        <b class="expandshow" style="display:none;">
+            <button class="btn btn-primary btn-lg btn-block" style="width: 100%;" onclick="$('.allshow').show();$('.noshow').hide();$('.collapseshow').show();$('.expandshow').hide();">EXPAND ALL SECTIONS</button>
+        </b>
+        <b class="collapseshow" style="display:none;">
+            <button class="btn btn-primary btn-lg btn-block" style="display: block; width: 100%;" onclick="$('.allshow').hide();$('.noshow').show();$('.expandshow').show();$('.collapseshow').hide();">COLLAPSE ALL SECTIONS</button>
+        </b>
+    </div>
+</section>
