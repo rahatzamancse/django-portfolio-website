@@ -39,7 +39,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'rahat',
     'prapti'
 ]
 
@@ -129,7 +128,6 @@ STATIC_URL = '/static/'
 # Extra places for collectstatic to find static files.
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'prapti/static'),
-    os.path.join(BASE_DIR, 'rahat/static'),
     os.path.join(BASE_DIR, 'portfolio/static'),
 )
 
