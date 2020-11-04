@@ -9,12 +9,6 @@
                     <hr>
                     <h2>Courses</h2>
                     {% include 'academic-courses.html' %}
-                    {% with relatedto|add:"/coursera-courses.html" as courses %}
-                        {% include courses %}
-                    {% endwith %}
-                    {% with relatedto|add:"/udemy-courses.html" as courses %}
-                        {% include courses %}
-                    {% endwith %}
                 </div>
             </div>
         </div>
